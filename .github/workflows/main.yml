@@ -21,5 +21,7 @@ jobs:
   test_job:
     runs-on: [ubuntu-20.04]  
     steps:
-    - run: echo "SELECTED_COLOR=green" >> $GITHUB_OUTPUT
-  
+    - name: sx2
+      id: first_step
+      run: echo "SELECTED_COLOR=green" >> $GITHUB_OUTPUT
+    - run: echo "echo hello world ${{ steps.first_step.outputs.SELECTED_COLOR }}"
