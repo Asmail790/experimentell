@@ -1,0 +1,5 @@
+name: Test 
+  on: [fork]
+    jobs:
+      runs-on: ubuntu-latest
+      run: echo hellow
