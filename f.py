@@ -1,0 +1,6 @@
+
+
+"""
+documnted
+"""
+def function(): pass 
