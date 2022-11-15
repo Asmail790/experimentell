@@ -13,3 +13,7 @@ jobs:
         words: ["3.7", "3.8", "3.9", "3.10", "hege"]
     steps:
       - run: echo ${{ matrix.words }}
+      - run: |
+            echo "::group::My title"
+            echo "Inside group"
+            echo "::endgroup::"
