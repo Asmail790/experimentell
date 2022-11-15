@@ -17,7 +17,13 @@ jobs:
       - run: |
             echo "::group::My title"
             echo "Inside group"
+            echo "::group::Inner My group"
+            echo "Inside inner group"
             echo "::endgroup::"
+            echo "::endgroup::"
+            
+            
+            
   test_job:
     runs-on: [ubuntu-20.04]  
     steps:
